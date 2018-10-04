@@ -27,6 +27,8 @@ public class Editor  {
          	JMenu formatOptions = new JMenu("Font");
          	scroll = new JScrollPane(text);
             scroll.setSize(100,100);
+
+            NewFileMenu newFile = new NewFileMenu(this);
          	OpenFileMenu open = new OpenFileMenu(this);
          	SaveFileMenu save = new SaveFileMenu(this);
             SaveAsFileMenu saveAs = new SaveAsFileMenu(this);
@@ -34,6 +36,7 @@ public class Editor  {
             FontFamilyMenu fontFamily = new FontFamilyMenu(this);
             FontSizeMenu fontSize = new FontSizeMenu(this);
 
+            fileOptions.add(newFile);
          	fileOptions.add(open);
          	fileOptions.add(save);
          	fileOptions.add(saveAs);
@@ -43,6 +46,7 @@ public class Editor  {
 
          	options.add(fileOptions);
          	options.add(formatOptions);
+
             frame.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
         	frame.add(scroll);
         	frame.addWindowListener(new WindowOnExit(this));

@@ -24,8 +24,6 @@ public class WindowOnExit implements WindowListener {
 
             if (option == JOptionPane.YES_OPTION){
 
-                File currentFile = editor.getCurrentFile();
-
 
                 String currentText = editor.getCurrentText();
                 try{
