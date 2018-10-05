@@ -7,6 +7,10 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.*;
 
+/**
+ *This class creates a save file menu where the file is automatically saved if the file has
+ * previously been saved. If the file has not been saved it opens a dialog for the user to save the file.
+ */
 public class SaveFileMenu extends JMenuItem implements ActionListener {
     private Editor editor;
 

@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 import java.io.*;
 
 /**
- * This class creates a Save As file menu item
+ * This class creates a Save As file menu item to replace the name of the current file
  */
 public class SaveAsFileMenu extends JMenuItem implements ActionListener {
     private Editor editor;

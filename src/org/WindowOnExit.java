@@ -4,7 +4,12 @@ import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 import javax.swing.*;
 import java.io.*;
-import java.rmi.ServerError;
+
+/**
+ * This window listener will activate when the editor is being closed.
+ * It checks if the file has previously been saved and if the editor has unsaved changes.
+ * If it is unsaved then it will prompt the user asking if they would like to save before closing.
+ */
 
 public class WindowOnExit implements WindowListener {
 
