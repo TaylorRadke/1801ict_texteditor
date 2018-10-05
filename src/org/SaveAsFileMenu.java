@@ -5,6 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.*;
 
+/**
+ * This class creates a Save As file menu item
+ */
 public class SaveAsFileMenu extends JMenuItem implements ActionListener {
     private Editor editor;
 

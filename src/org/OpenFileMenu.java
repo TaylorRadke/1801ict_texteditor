@@ -5,6 +5,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.*;
 
+/**
+ * This class creates an open file menu item that allows the user to open any text file and display it's content
+ * to the text editor.
+ */
 public class OpenFileMenu extends JMenuItem implements ActionListener {
 
     private Editor editor;
